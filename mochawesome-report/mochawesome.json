@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-08T10:47:56.490Z",
+    "end": "2022-10-08T10:48:36.929Z",
+    "duration": 40439,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1eee1413-f859-4347-a9b9-d6a0ef339c51",
+      "title": "",
+      "fullFile": "cypress/integration/RegressionTest.js",
+      "file": "cypress/integration/RegressionTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e0ca0748-8c62-4da3-a3da-fa46c43cde58",
+          "title": "Quales test management suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate that user can login successfully to the Quales Management app",
+              "fullTitle": "Quales test management suite Validate that user can login successfully to the Quales Management app",
+              "timedOut": null,
+              "duration": 35975,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//to visit the url\ncy.visit(\"http://tawdry-rule.surge.sh\"); //spyed on the sign in button\ncy.get('.css-48p1y4 > .MuiButton-root') // To click\n.click(); // spy on the email repository field\ncy.get('[data-testid=EmailAddress]') //type the email\n.type(\"ay@mail.com\"); // spy on the password input field\ncy.get('[data-testid=Password]').type(\"pass1234\"); //spy on the login button\ncy.get('.MuiButton-contained') //click on the login\n.click(); // write an assertion that the name ayobami appears\n// spy on the name ayobami\ncy.contains(\"Ayobami\").should(\"be.visible\"); // spy on the add course button\ncy.get('.MuiGrid-root > .MuiButton-root') // click on the add course button\n.click();\ncy.viewport(1569, 969); // spy on the title button\ncy.get('[data-testid=\"Title*\"]').type(\"Postman101\"); // spy on the description button\ncy.get('[data-testid=\"Description*\"]').type(\"Introduction to postman\"); // spy on the select category\ncy.get('#demo-simple-select').click(); //spy on the Quality Assurance Category\ncy.get('[data-value=\"1\"]').click(); // spy on the image url category\ncy.get('[data-testid=ImageURL]').type(\"https://img.freepik.com/free-photo/quality-assurance-clipboard-icon_53876-123828.jpg?w=900&t=st=1665219059~exp=1665219659~hmac=fd98507075000b0937198bdee4d42805f4a83d44dc77773b28643d13ec006d3e\"); //spy on the offline button\ncy.get('[data-testid=offline]').click(); // Spy on the address button\ncy.get('[data-testid=\"Address*\"]').type(\"No 72, Ademola Street, Alafia Estate, Ajibode, Ibadan, Oyo State.\"); //spy on the add course button\ncy.get('.css-tzsjye > .MuiButton-root').click(); // spy on the logout button\ncy.get('.MuiToolbar-root > .MuiButton-root').click();",
+              "err": {},
+              "uuid": "52520b79-f9cf-470c-a091-894125c5568a",
+              "parentUUID": "e0ca0748-8c62-4da3-a3da-fa46c43cde58",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "52520b79-f9cf-470c-a091-894125c5568a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 35975,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
