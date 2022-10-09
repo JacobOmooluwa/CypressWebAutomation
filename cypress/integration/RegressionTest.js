@@ -6,6 +6,7 @@ describe("Quales test management suite",  () => {
 //here is the it block where both test case description and test scripts
   it("Validate that user can login successfully to the Quales Management app",  () => {
   
+    
     //to visit the url
     cy.visit("http://tawdry-rule.surge.sh");
     
